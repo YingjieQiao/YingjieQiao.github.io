@@ -3,7 +3,7 @@
       <v-container>
         <v-row>
           <v-col sm="6">
-            <g-image alt="Example image" src="~/me.png" width="400" height="400"/>
+            <v-img alt="Example image" src="../assets/me.png" width="400" height="400"/>
           </v-col>
           <v-col sm="6" class="d-flex flex-column align-center">
             <h1>Hello there! I'm Yingjie.</h1>

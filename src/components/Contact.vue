@@ -9,13 +9,13 @@
 
             <v-row sm="6" offset-sm="3" class="d-flex justify-space-around">
                 <a href="https://github.com/YingjieQiao">
-                    <g-image alt="Github" src="~/github.svg" width="50" height="50"/>
+                    <v-img alt="Github" src="../assets/github.svg" width="50" height="50"/>
                 </a>
                 <a href="https://www.linkedin.com/in/yingjie-qiao/">
-                    <g-image alt="LinkedIn" src="~/linkedin.svg" width="50" height="50"/>
+                    <v-img alt="LinkedIn" src="../assets/linkedin.svg" width="50" height="50"/>
                 </a>
                 <a href="https://twitter.com/home">
-                    <g-image alt="Twitter" src="~/twitter.svg" width="50" height="50"/>
+                    <v-img alt="Twitter" src="../assets/twitter.svg" width="50" height="50"/>
                 </a>
             </v-row>
 
@@ -26,9 +26,6 @@
             </div>
         </v-container>
     </section>
-
-
-    
 </template>
 
 

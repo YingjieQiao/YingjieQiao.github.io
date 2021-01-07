@@ -1,10 +1,9 @@
 <template>
     <section id="projects" class="projects-section">
-        <v-container fluid>
+        <v-container>
             <v-row>
                 <v-col>
                     <h1>Projects</h1>
-                    <p>Here are some projects I've done.</p>
                 </v-col>
             </v-row>
 
@@ -29,16 +28,19 @@
                     </v-card-subtitle> -->
 
                     <v-card-text class="text--primary">
-                    <div >{{ project.description }}</div>
-                    <div v-if="project.name == 'Automated Email Scheduler' "> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
-                        <p>&nbsp;</p> 
+                    <div v-if="project.name != 'Automated Email Scheduler' ">
+                        {{ project.description }}
+                    </div>
+                    <div v-else> 
+                        {{ project.description }}
+                        <p> <br> </p>
+                        <p> <br> </p>
+                        <p> <br> </p>
+                        <p> <br> </p>
+                        <p> <br> </p>
+                        <p> <br> </p>
+                        <p> <br> </p>
+                        <p> <br> </p>
                     </div>
 
                     <!-- <div>Whitsunday Island, Whitsunday Islands</div> -->
