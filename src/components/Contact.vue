@@ -14,9 +14,7 @@
                 <a href="https://www.linkedin.com/in/yingjie-qiao/">
                     <v-img alt="LinkedIn" src="../assets/linkedin.svg" width="50" height="50"/>
                 </a>
-                <a href="https://twitter.com/home">
-                    <v-img alt="Twitter" src="../assets/twitter.svg" width="50" height="50"/>
-                </a>
+
             </v-row>
 
             <p>&nbsp;</p> 
