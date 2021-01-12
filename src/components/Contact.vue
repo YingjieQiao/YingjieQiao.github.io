@@ -22,7 +22,7 @@
             <p>&nbsp;</p> 
 
             <div class="links text-center align-items-end">
-                <p>yingjie_qiao@outlook.com<br>© <span id="year">2021 </span>Qiao Yingjie</p>
+                <p>yingjie_qiao@outlook.com<br>© <span>{{ new Date().getFullYear() }} </span>Qiao Yingjie</p>
             </div>
         </v-container>
     </section>
