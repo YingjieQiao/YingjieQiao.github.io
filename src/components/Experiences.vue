@@ -66,7 +66,7 @@
                         <div class="text--primary">
                             <ul>
                                 <li>Contributed a VQA (Video Question Answering) Deep Learning model baseline to a paper 
-                                    submitted to CVPR 2021, currently under anonymous review.
+                                    submitted to CVPR 2021.
                                 </li>
                                 <li>Managed the lab GPU server and deployed multiple Deep Learning experiments using Docker over time.
                                 </li>

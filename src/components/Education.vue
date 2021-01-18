@@ -22,7 +22,8 @@
                         <div class="text--primary">
                             <ul>
                                 <li>Bachelor of Engineering, 
-                                    Information System Technology and Design (Computer Science), Honours, GPA: 4.8/5.0</li>
+                                    Information System Technology and Design (Computer Science), Honours, 
+                                    GPA: 4.73/5.0</li>
                                 <li>Recipient of Senior Middle 2 (SM2) scholarship,
                                      awarded for being the top 5% of students 
                                 in the best provincial high school in China
