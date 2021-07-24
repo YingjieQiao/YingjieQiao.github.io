@@ -53,16 +53,16 @@ body{
 .home_container{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     position: relative;
     top: 12rem;
 }
 
 .home_container .home_head_wrapper{
-    position: relative;
-    top:2rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top:2rem;
     width: 40vw;
 }
 .home_container .home_head_wrapper h1{
@@ -128,7 +128,7 @@ body{
     top:20rem;
 }
 .contact_container h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Montserrat';
 }
 .contact_container p{

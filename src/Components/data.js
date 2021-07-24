@@ -25,5 +25,16 @@ export default {
             name: "GitHub",
             url: "https://github.com/YingjieQiao"
         }
+    ],
+
+    jobs: [
+        {
+            "name": "Jublia Pte Ltd",
+            "title": "Software Engineering Intern @ TechOps",
+            "location_and_time": "Singapore, May 2020 - Sept 2020",
+            "pointers": [
+                "a", "b", "c"
+            ]
+        }
     ]
 }
