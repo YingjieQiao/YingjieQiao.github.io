@@ -38,12 +38,11 @@ class Home extends Component {
 
                     <div>
                         <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>C</li>
+                            {data.languages.map(
+                                (language)=>(
+                                    <li key={language.name}>{language.name}</li>
+                                )
+                            )}
                         </ul>
                     </div>
 
@@ -51,29 +50,23 @@ class Home extends Component {
 
                     <div>
                         <ul>
-                            <li>Flask</li>
-                            <li>React</li>
-                            <li>Vue.js</li>
-                            <li>JQuery</li>
+                            {data.web_fw.map(
+                                (fw)=>(
+                                    <li key={fw.name}>{fw.name}</li>
+                                )
+                            )}
                         </ul>
                     </div>
 
                     <h2>Tools and Technologies:</h2>
-
+                    
                     <div>
                         <ul class="columns" data-columns="2">
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>AWS</li>
-                            <li>Google Cloud</li>
-                            <li>Cloud Foundry</li>
-                            <li>MongoDB</li>
-                            <li>SQLite</li>
-                            <li>Android</li>
-                            <li>Ubuntu</li>
-                            <li>Node.js</li>
-                            <li>Shell Script</li>
-                            <li>Git</li>
+                            {data.tools.map(
+                                (tool)=>(
+                                    <li key={tool.name}>{tool.name}</li>
+                                )
+                            )}
                         </ul>
                     </div>
 
