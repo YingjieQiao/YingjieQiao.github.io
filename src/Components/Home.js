@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import { FaEnvelope, FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import styles from "../css/home.module.css";
 import data from "./data";
@@ -27,26 +27,79 @@ class Home extends Component {
 
                         <p>{data.intro}</p>
                         
-                        </div>
-                        <div className={styles.image_container}>
-                            <img src={data.me_img} alt="Author"></img>
-                            <div className={styles.bg}></div>
-                        </div>
+                    </div>
+
+                    <div className={styles.image_container}>
+                        <img src={data.me_img} alt="Author"></img>
+                        <div className={styles.bg}></div>
+                    </div>
+
+                    
+                </div>
+
+                <div className={styles.about_container}>
+                    <p>{data.paragraph1}</p>
+                    
+                    <br></br>
+                    <br></br>
+
+                    <p> {data.techstack}</p>
+
+                    <h2>Programming Languages:</h2>
+
+                    <div>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+
+                    <h2>Web Frameworks:</h2>
+
+                    <div>
+                        <ul>
+                            <li>Flask</li>
+                            <li>React</li>
+                            <li>Vue.js</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+
+                    <h2>Tools and Technologies:</h2>
+
+                    <div>
+                        <ul class="columns" data-columns="2">
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>AWS</li>
+                            <li>Google Cloud</li>
+                            <li>Cloud Foundry</li>
+                            <li>MongoDB</li>
+                            <li>SQLite</li>
+                            <li>Android</li>
+                            <li>Ubuntu</li>
+                            <li>Node.js</li>
+                            <li>Shell Script</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+
+                    <h2>etc...</h2>
+                    
+
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
 
                 <div className={styles.contact_container}>
                     
-                    <p>{data.paragraph1}</p>
-
-                    {/* techstack */}
-                    {/* <br></br>
-                    <br></br> */}
-
-
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    
 
                     <h1>Get in touch.</h1>
 
@@ -77,10 +130,18 @@ class Home extends Component {
 
                         </ul>
                     </div>
+
+                    <footer> © <span>{new Date().getFullYear()} </span>Qiao Yingjie </footer>
+
+                    
                 </div>
 
 
+                                    
+                
+
             </div>
+
 
             
         )
