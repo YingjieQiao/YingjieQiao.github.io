@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
 
 
+.exp {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5rem;
+}
+
+.text_container p{
+    position: relative;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 .exp_container {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 5rem;
-    width: 80vw;
 }
 
 .exp_container .pointer_wrapper {
@@ -37,11 +56,18 @@
     -moz-columns: 1;
     font-size: 1rem;
     float: left;
+    white-space: pre-wrap;
+    /* flex-direction: column; */
 }
 
 .exp_container li{
     float: left;
 }
+
+/* .exp_container li:after{
+    content: "\A";
+    white-space: pre;
+} */
 
 .exp_container meta {
 	width: 75vw;
