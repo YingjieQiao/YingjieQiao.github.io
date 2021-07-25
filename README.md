@@ -4,4 +4,4 @@ yarn install
 yarn start
 ```
 
-previously Vue + external UI framework, now React + vanilla css
+previously Vue + Vuetify, now React + vanilla css + react-bootstrap
