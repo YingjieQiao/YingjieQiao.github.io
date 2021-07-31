@@ -99,5 +99,49 @@ export default {
                 "Early graduation to proceed to university study in Singapore.                             "
             ]
         }
+    ],
+
+    projects: [
+        {
+            "name": "Kue",
+            "images": [
+                "kue1.png",
+                "kue2.png",
+                "kue3.png"
+            ],
+            "pointers": [
+                "Kue is a Smart restaurant management and order tracking app, developed using Native Java. It provideds" + 
+                "the following main functionalities that enable smart restaurant workflow management: ",
+                "Cashier system - Food establishment able to add menu items, their respective costs and preparation timing into the application. When a customer orders food, cashiers will select items ordered in the app. When order is completed, QR code will be made available to scan for customers.",
+                "Cooking system - each order will be added to the cooks’ page real time for cooks to prepare food orders. The cook will check each order item to update the waiters and customers when an order is done, and the customers will be notified via a web landing page.",
+                "Landing page provides another layer of interaction with the customers- opening up a new path for connectivity between food establishments and their customers, where customers will be given their waiting time and be notified when the order is done, as well as a rating system.",
+                "Data collection and analysis - We recognised that many data points are being collected during the usage of the application’s various functions, and that we could make use of these data to provide some analytics for the food establishments."
+            ],
+            "code": "https://github.com/YingjieQiao/kue"
+        },
+
+        {
+            "name": "Automated Email Scheduler",
+            "images": [
+                "jublia.png",
+            ],
+            "pointers": [
+                "This is one of the projects I've done during my internship at Jublia. An email scheduler is employed to send a series of emails for each event to engage the attendees from 1 week before the event until the end of the event. I designed a process such that all emails are automatically scheduled after the first “Launch Email” is sent.",
+            ],
+            "code": "https://github.com/YingjieQiao/FPGA_Snake_Game_Using_16bit_CPU"
+        },
+
+        // {
+        //     "name": "Hardware Snake Game",
+        //     "images": [
+        //         "snake.png",
+        //     ],
+        //     "pointers": [
+        //         "Implemented the logic of Snake Game in Assembly code and created the compiler script to produce the corresponding machine code.",
+        //         "Created a customized 16-bit Beta CPU using Alchitry Au FPGA board to run the game."
+        //     ],
+        //     "code": "https://github.com/YingjieQiao/FPGA_Snake_Game_Using_16bit_CPU"
+        // },
+        
     ]
 }

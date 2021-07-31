@@ -8,10 +8,14 @@ class Experiences extends Component {
 
     render() {
         return (
-            <div className={styles.exp}> 
-                <div className={styles.text_container}>
+            <div classname={styles.proj}>
+
+            <div className={styles.text_container}>
                     <p>What I have worked on before and what I'm currently working on</p>
-                </div>
+            </div>
+            
+            <div className={styles.exp}> 
+                
 
                 <div className={styles.exp_container}>
                     <h1>Work Experiences</h1>
@@ -83,6 +87,8 @@ class Experiences extends Component {
             
 
 	        </div> 
+
+            </div>
         )
     }
 }

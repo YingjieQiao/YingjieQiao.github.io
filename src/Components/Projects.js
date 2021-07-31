@@ -1,29 +1,83 @@
 import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
-import CardColumns from 'react-bootstrap/CardColumns'
 
 import styles from '../css/projects.module.css'
+import data from "./data";
+
+const Divider = ({ children }) => {
+    return (
+      <div className={styles.container}>
+        <div className={styles.border} />
+        <span className={styles.content}>
+          {children}
+        </span>
+        <div className={styles.border} />
+      </div>
+    );
+};
 
 class Projects extends Component {
 
+    
+
     render() {
         return (
-            <CardColumns>
-                <Card>
-                    <Card.Img variant="top" src="test.png" />
+            <div className={styles.project_container}> 
+                    <h3>Some of the projects I have done</h3>
+                
+                {
+                    data.projects.map(
+                        (project)=>(
+                            <div>
+                                
+                            <Card >
+                                {
+                                    project.images.map(
+                                        (image)=>(
+                                            <Card.Img className={styles.project_image} variant="top" src={image} />
+                                        )
+                                    )
+                                }
+                                
+                                <Card.Body >
+                                    <h1>{project.name}</h1>
+                                    {
+                                        project.pointers.map(
+                                            (pointer)=>(
+                                                <Card.Text> 
+                                                    {pointer}
+                                                </Card.Text>
+                                            )
+                                        )
+                                    }
+                                </Card.Body>
 
-                    <Card.Body classname={styles.test}>
-                        <Card.Title>Card title that wraps to a new line</Card.Title>
-                        <Card.Text >
-                            This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Link href="#">Card Link</Card.Link>
-                </Card>
-                
-                
-            </CardColumns>
+                                {
+                                    project.name === "Kue" ? (
+                                        <Card.Link href={project.code}>Click to see source code and demo</Card.Link>
+                                    ) : (
+                                        <Card.Link href={project.code}>Click to see source code</Card.Link>
+                                    )
+                                }
+                                
+                            </Card>
+                            
+                            <br></br>
+                            <br></br>
+                            <br></br>
+
+                            <Divider> & </Divider>
+
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            
+                            </div>
+                        )
+                    )
+                }
+                    
+            </div>
         )
     }
 }
