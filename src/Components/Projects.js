@@ -53,10 +53,10 @@ class Projects extends Component {
                                 </Card.Body>
 
                                 {
-                                    project.name === "Kue" ? (
-                                        <Card.Link href={project.code}>Click to see source code and demo</Card.Link>
+                                    project.name === "Kue" || project.name == "SingHealth Retail Management Platform" ? (
+                                        <Card.Link href={project.code}>Click to see source code (and demo)</Card.Link>
                                     ) : (
-                                        <Card.Link href={project.code}>Click to see source code</Card.Link>
+                                        <div></div>
                                     )
                                 }
                                 

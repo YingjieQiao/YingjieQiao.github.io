@@ -59,4 +59,5 @@
 
 .project_container img {
     max-height: 500px;
+    max-width: 1000px;
 }

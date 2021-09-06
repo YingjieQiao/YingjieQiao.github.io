@@ -38,8 +38,10 @@ class Experiences extends Component {
                                         {
                                             job.pointers.map(
                                                 (pointer)=>(
+                                                    
                                                     <li>{pointer}
                                                     </li>
+
                                                 )
                                             )
                                         }

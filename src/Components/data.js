@@ -36,10 +36,12 @@ export default {
         {
             "name": "SAP Asia",
             "title": "Software Engineer Intern @ AI Business Services",
-            "location_and_time": "Singapore, May 2020 - present ",
+            "location_and_time": "Singapore, May 2020 - Aug 2020 ",
             "pointers": [
-                "Working on OCR services with high scalability and availability. " +
-                "Preparing to launch a visualization platform for OCR results, for more efficient regression test"
+                "Scalability - Implemented Message Queue between API interface and GPU computing cluster to make sure the service does not break under high traffic.",
+                "Availability - conducted various load test using locust and updated horizontal scaling policy.",
+                "Updated Kubernetes deployment script for new OCR models with Grafana and Prometheus for monitoring.",
+                "Update to HTTPS connection & TLS certificates for security."
             ]
         },
         {
@@ -103,6 +105,18 @@ export default {
 
     projects: [
         {
+            "name": "SingHealth Retail Management Platform",
+            "images": [
+                "singhealth.png",
+            ],
+            "pointers": [
+                "A web platform to enable digitalization of SingHealth Retail Management. This is to help SingHealth manages the retail outlets under its hospitals digitally, including hygien non-conpliance, outlet evaluation, report and email automation, etc.",
+                "Built with Flask, React, MongoDB and AWS Services.",
+                
+            ],
+            "code": "https://github.com/YingjieQiao/SingHealth_Retail_Management_ESC"
+        }
+        ,{
             "name": "Kue",
             "images": [
                 "kue1.png",
@@ -129,19 +143,7 @@ export default {
                 "This is one of the projects I've done during my internship at Jublia. An email scheduler is employed to send a series of emails for each event to engage the attendees from 1 week before the event until the end of the event. I designed a process such that all emails are automatically scheduled after the first “Launch Email” is sent.",
             ],
             "code": "https://github.com/YingjieQiao/FPGA_Snake_Game_Using_16bit_CPU"
-        },
-
-        // {
-        //     "name": "Hardware Snake Game",
-        //     "images": [
-        //         "snake.png",
-        //     ],
-        //     "pointers": [
-        //         "Implemented the logic of Snake Game in Assembly code and created the compiler script to produce the corresponding machine code.",
-        //         "Created a customized 16-bit Beta CPU using Alchitry Au FPGA board to run the game."
-        //     ],
-        //     "code": "https://github.com/YingjieQiao/FPGA_Snake_Game_Using_16bit_CPU"
-        // },
+        }
         
     ]
 }

@@ -56,7 +56,7 @@
     -moz-columns: 1;
     font-size: 1rem;
     float: left;
-    white-space: pre-wrap;
+    white-space: pre-line;
     /* flex-direction: column; */
 }
 
