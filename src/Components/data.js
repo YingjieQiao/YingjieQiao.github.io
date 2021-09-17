@@ -36,7 +36,7 @@ export default {
         {
             "name": "SAP Asia",
             "title": "Software Engineer Intern @ AI Business Services",
-            "location_and_time": "Singapore, May 2020 - Aug 2020 ",
+            "location_and_time": "Singapore, May 2021 - Aug 2021",
             "pointers": [
                 "Scalability - Implemented Message Queue between API interface and GPU computing cluster to make sure the service does not break under high traffic.",
                 "Availability - conducted various load test using locust and updated horizontal scaling policy.",
