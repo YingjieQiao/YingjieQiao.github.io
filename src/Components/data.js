@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     fullname: "Qiao Yingjie",
     name: "Yingjie",
@@ -15,9 +16,11 @@ export default {
 
     languages: [{"name": "Python"}, {"name": "Java"}, {"name": "JavaScript"}, 
                 {"name": "HTML"}, {"name": "CSS"}, {"name": "C"}],
-    web_fw: [{"name": "Flask"}, {"name": "React"}, {"name": "Vue"}, {"name": "jQuery"}],
-    tools: [{"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, {"name":  "Google Cloud"}, {"name": "Cloud Foundry"}, 
-            {"name": "MongoDB"}, {"name": "SQLite"}, {"name": "Andoird"}, {"name": "Ubuntu"}, {"name": "Node.js"}, 
+    web_fw: [{"name": "Flask"}, {"name": "FastAPI"}, {"name": "Express.js"}, {"name": "React.js"}, {"name": "Vue.js"}],
+    tools: [{"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, 
+            {"name":  "Google Cloud"}, {"name": "Cloud Foundry"}, 
+            {"name": "MongoDB"}, {"name": "PostgreSQL"}, {"name": "Jenkins"}, 
+            {"name": "Andoird"}, {"name": "Ubuntu"}, {"name": "Node.js"}, 
             {"name": "Shell Script"}, {"name": "Git"}],
 
     contact_email: "yingjie_qiao@outlook.com",
@@ -39,9 +42,10 @@ export default {
             "location_and_time": "Singapore, May 2021 - Aug 2021",
             "pointers": [
                 "Scalability - Implemented Message Queue between API interface and GPU computing cluster to make sure the service does not break under high traffic.",
-                "Availability - conducted various load test using locust and updated horizontal scaling policy.",
+                "Availability - Conducted various load test using locust and updated horizontal scaling policy.",
                 "Updated Kubernetes deployment script for new OCR models with Grafana and Prometheus for monitoring.",
-                "Update to HTTPS connection & TLS certificates for security."
+                "Updated to HTTPS connection using TLS certificates for the deployment of new OCR model to enhance security.",
+                "OCR result visualization tool using React and FastAPI."
             ]
         },
         {
