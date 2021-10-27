@@ -91,7 +91,7 @@ export default {
             "title": "Bachelor of Engineering, Computer Science and Design, Honours",
             "location_and_time": "Singapore, May 2019 - Present",
             "pointers": [
-                "GPA: 4.73/5.0, expected Honours with Highest Distinction.",
+                "GPA: 4.66/5.00, expected Honours with Highest Distinction.",
                 "Recipient of SM2 scholarship, awarded for being the top 5% of students in top provincial high schools in China.",
                 "AY2019 - AY2020 Honours List. Awarded to the top 10% of each student cohort in recognition of meritorious performance."
             ]
