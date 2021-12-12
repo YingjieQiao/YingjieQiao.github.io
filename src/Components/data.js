@@ -4,7 +4,7 @@ export default {
     name: "Yingjie",
     me_img: "me.png",
     intro: "I'm a Software Engineer. Currently a Final Year Computer Science student at Singapore " +
-            "University of Technology and Design (SUTD), and working as a fullstack Software Engineer Intern at SAP.",
+            "University of Technology and Design (SUTD), and working as a Software Engineer Intern at Binance.",
 
     paragraph1:  "I aspire to build high-impact software products, " +
                 "with attention to code details and scalable & maintainable architecture. " +
@@ -16,7 +16,7 @@ export default {
 
     languages: [{"name": "Python"}, {"name": "Java"}, {"name": "JavaScript"}, 
                 {"name": "HTML"}, {"name": "CSS"}, {"name": "C"}],
-    web_fw: [{"name": "Flask"}, {"name": "FastAPI"}, {"name": "Express.js"}, {"name": "React.js"}, {"name": "Vue.js"}],
+    web_fw: [{"name": "Flask"}, {"name": "FastAPI"}, {"name": "Express.js"}, {"name": "React.js"}],
     tools: [{"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, 
             {"name":  "Google Cloud"}, {"name": "Cloud Foundry"}, 
             {"name": "MongoDB"}, {"name": "PostgreSQL"}, {"name": "Jenkins"}, 
@@ -36,6 +36,14 @@ export default {
     ],
 
     jobs: [
+        {
+            "name": "Binance",
+            "title": "Software Engineer Intern",
+            "location_and_time": "Singapore, Dec 2021 - Present",
+            "pointers": [
+                
+            ]
+        },
         {
             "name": "SAP Asia",
             "title": "Software Engineer Intern @ AI Business Services",
