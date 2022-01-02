@@ -26,6 +26,7 @@
     flex-direction: column;
     position: relative;
     top: 5rem;
+    width: 1010px;
 }
 
 .exp_container .pointer_wrapper {

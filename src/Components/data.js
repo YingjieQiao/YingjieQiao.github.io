@@ -41,7 +41,7 @@ export default {
             "title": "Software Engineer Intern",
             "location_and_time": "Singapore, Dec 2021 - Present",
             "pointers": [
-                
+                "Working on Risk Management related backend development for Binance's transaction services using Java Spring framework.",
             ]
         },
         {
@@ -100,17 +100,7 @@ export default {
             "location_and_time": "Singapore, May 2019 - Present",
             "pointers": [
                 "GPA: 4.66/5.00, expected Honours with Highest Distinction.",
-                "Recipient of SM2 scholarship, awarded for being the top 5% of students in top provincial high schools in China.",
-                "AY2019 - AY2020 Honours List. Awarded to the top 10% of each student cohort in recognition of meritorious performance."
-            ]
-        },
-        {
-            "name": "Hengshui High School",
-            "title": "",
-            "location_and_time": "China, Sept 2016 - May 2018",
-            "pointers": [
-                "Completed all compulsory and elective math and science (Physics, Chemistry, Biology) courses in 2 years.",
-                "Early graduation to proceed to university study in Singapore.                             "
+                "AY2019 - AY2020, AY2020 - AY2021 Honours List. Awarded to the top 10% of each student cohort in recognition of meritorious performance."
             ]
         }
     ],
