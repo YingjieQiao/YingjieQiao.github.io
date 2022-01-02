@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    fullname: "Qiao Yingjie",
+    fullname: "Yingjie Qiao",
     name: "Yingjie",
     me_img: "me.png",
     intro: "I'm a Software Engineer. Currently a Final Year Computer Science student at Singapore " +

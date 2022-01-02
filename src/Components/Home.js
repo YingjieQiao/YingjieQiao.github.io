@@ -113,7 +113,7 @@ class Home extends Component {
                         </ul>
                     </div>
 
-                    <footer> © <span>{new Date().getFullYear()} </span>Qiao Yingjie </footer>
+                    <footer> © <span>{new Date().getFullYear()} </span>Yingjie Qiao</footer>
 
                     
                 </div>
