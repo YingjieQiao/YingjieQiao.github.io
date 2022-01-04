@@ -4,7 +4,7 @@ export default {
     name: "Yingjie",
     me_img: "me.png",
     intro: "I'm a Software Engineer. Currently a Final Year Computer Science student at Singapore " +
-            "University of Technology and Design (SUTD), and working as a Software Engineer Intern at Binance.",
+            "University of Technology and Design (SUTD), and looking for entry-level / fresh grad opportunities starting in 2022.",
 
     paragraph1:  "I aspire to build high-impact software products, " +
                 "with attention to code details and scalable & maintainable architecture. " +
@@ -99,8 +99,9 @@ export default {
             "title": "Bachelor of Engineering, Computer Science and Design, Honours",
             "location_and_time": "Singapore, May 2019 - Present",
             "pointers": [
-                "GPA: 4.66/5.00, expected Honours with Highest Distinction.",
-                "AY2019 - AY2020, AY2020 - AY2021 Honours List. Awarded to the top 10% of each student cohort in recognition of meritorious performance."
+                "GPA: 4.66/5.00, expected Honours with Highest Distinction. ",
+                "Recipient of MOE Senior Middle 2 (SM2) scholarship. ",
+                "AY2019 - AY2020, AY2020 - AY2021 Honours List. Awarded to the top 10% of each student cohort in recognition of meritorious performance. "
             ]
         }
     ],

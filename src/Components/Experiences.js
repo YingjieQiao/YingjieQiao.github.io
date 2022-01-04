@@ -34,13 +34,12 @@ class Experiences extends Component {
                                     <br></br>
                                     <br></br>
 
-                                    <ul style={{float : 'left'}}>
+                                    <ul >
                                         {
                                             job.pointers.map(
                                                 (pointer)=>(
                                                     
-                                                    <li>{pointer}
-                                                    </li>
+                                                    <li>• {pointer}</li>
 
                                                 )
                                             )
@@ -73,8 +72,7 @@ class Experiences extends Component {
                                     {
                                         school.pointers.map(
                                             (pointer)=>(
-                                                <li class="nav-item d-inline-flex  align-items-center mr-2">{pointer}
-                                                </li>
+                                                <li>• {pointer}</li>
                                                 
                                             )
                                         )
