@@ -39,7 +39,7 @@ export default {
         {
             "name": "Binance",
             "title": "Software Engineer Intern @ Risk",
-            "location_and_time": "Singapore, Dec 2021 - Present",
+            "location_and_time": "Singapore, Jan 2022 - Apr 2022",
             "pointers": [
                 "Working on Risk Management related backend development for Binance's transaction services using Java Spring framework.",
             ]
