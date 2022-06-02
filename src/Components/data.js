@@ -15,10 +15,10 @@ export default {
     techstack: "I have experience in the following areas:",
 
     languages: [{"name": "Python"}, {"name": "Java"}, {"name": "JavaScript"}, 
-                {"name": "HTML"}, {"name": "CSS"}, {"name": "C"}],
-    web_fw: [{"name": "Flask"}, {"name": "FastAPI"}, {"name": "Express.js"}, {"name": "React.js"}],
+                {"name": "Golang"}, {"name": "C"}],
+    web_fw: [{"name": "Flask"}, {"name": "FastAPI"}, {"name": "Spring"}, {"name": "Express.js"}, {"name": "React.js"}],
     tools: [{"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, 
-            {"name":  "Google Cloud"}, {"name": "Cloud Foundry"}, 
+            {"name":  "Google Cloud"}, 
             {"name": "MongoDB"}, {"name": "PostgreSQL"}, {"name": "Jenkins"}, 
             {"name": "Andoird"}, {"name": "Ubuntu"}, {"name": "Node.js"}, 
             {"name": "Shell Script"}, {"name": "Git"}],
