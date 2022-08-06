@@ -3,10 +3,11 @@ export default {
     fullname: "Yingjie Qiao",
     name: "Yingjie",
     me_img: "me.png",
-    intro: "I'm a Software Engineer. Currently a Final Year Computer Science student at Singapore " +
-            "University of Technology and Design (SUTD), and looking for entry-level / fresh grad opportunities starting in 2022.",
+    intro: "I'm a Software Engineer. Currently, I am on track to join ByteDance Singapore to work on Risk Control & Compliance solutions that support the payment services at ByteDance / TikTok. Previously, I worked on similar Risk Management solutions at Binance, and OCR softwares at SAP during my internships. " + 
+            "I am on track to graduate with a Computer Science degree from Singapore " +
+            "University of Technology and Design (SUTD) in Sept 2022.",
 
-    paragraph1:  "I aspire to build high-impact software products, " +
+    paragraph1: "As an engineer, I aspire to build high-impact software products, " +
                 "with attention to code details and scalable & maintainable architecture. " +
                 "I enjoy solving problems with technology, and I constantly engage myself to new challenges " +
                 "and to learn new skills. I believe constant self-learning is essential for a software engineer "+
