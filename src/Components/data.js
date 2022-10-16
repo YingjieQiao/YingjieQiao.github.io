@@ -3,7 +3,7 @@ export default {
     fullname: "Yingjie Qiao",
     name: "Yingjie",
     me_img: "me.png",
-    intro: "I'm a Software Engineer. Currently, I working at ByteDance Singapore on Risk Control & Compliance solutions that support the payment services at ByteDance / TikTok. Previously, I worked on similar Risk Management solutions at Binance, and OCR softwares at SAP during my internships. " + 
+    intro: "I'm a Software Engineer. Currently, I am working at ByteDance Singapore on Risk Control & Compliance solutions that support the payment services at ByteDance / TikTok. Previously, I worked on similar Risk Management solutions at Binance, and OCR softwares at SAP during my internships. " + 
             "I graduated with a Computer Science degree from Singapore " +
             "University of Technology and Design (SUTD) in Sept 2022.",
 
