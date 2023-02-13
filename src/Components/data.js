@@ -21,7 +21,7 @@ export default {
     tools: [{"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, 
             {"name":  "Google Cloud"}, 
             {"name": "MongoDB"}, {"name": "PostgreSQL"}, {"name": "Jenkins"}, 
-            {"name": "Andoird"}, {"name": "Ubuntu"}, {"name": "Node.js"}, 
+            {"name": "Android"}, {"name": "Ubuntu"}, {"name": "Node.js"}, 
             {"name": "Shell Script"}, {"name": "Git"}],
 
     contact_email: "yingjie_qiao@outlook.com",
