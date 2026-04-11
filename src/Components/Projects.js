@@ -1,85 +1,79 @@
-import React, { Component } from 'react'
-import Card from 'react-bootstrap/Card'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import styles from '../css/projects.module.css'
+import styles from "../css/projects.module.css";
 import data from "./data";
 
-const Divider = ({ children }) => {
-    return (
-      <div className={styles.container}>
-        <div className={styles.border} />
-        <span className={styles.content}>
-          {children}
-        </span>
-        <div className={styles.border} />
-      </div>
-    );
-};
-
 class Projects extends Component {
+  render() {
+    return (
+      <main className={styles.page}>
+        <section className={styles.hero}>
+          <p className={styles.kicker}>Selected Work</p>
+          <h1>Projects shaped around practical product problems.</h1>
+          <p className={styles.intro}>
+            A mix of internal tools, digital platforms, and workflow-focused
+            applications built across web, mobile, and backend systems.
+          </p>
+        </section>
 
-    
+        <section className={styles.projectList}>
+          {data.projects.map((project, index) => (
+            <article className={styles.projectCard} key={project.name}>
+              <div className={styles.projectMeta}>
+                <span className={styles.projectIndex}>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <p className={styles.cardKicker}>Project</p>
+                  <h2>{project.name}</h2>
+                </div>
+              </div>
 
-    render() {
-        return (
-            <div className={styles.project_container}> 
-                    <h3>Some of the projects I have done</h3>
-                
-                {
-                    data.projects.map(
-                        (project)=>(
-                            <div>
-                                
-                            <Card >
-                                {
-                                    project.images.map(
-                                        (image)=>(
-                                            <Card.Img className={styles.project_image} variant="top" src={image} />
-                                        )
-                                    )
-                                }
-                                
-                                <Card.Body >
-                                    <h1>{project.name}</h1>
-                                    {
-                                        project.pointers.map(
-                                            (pointer)=>(
-                                                <Card.Text> 
-                                                    {pointer}
-                                                </Card.Text>
-                                            )
-                                        )
-                                    }
-                                </Card.Body>
-
-                                {
-                                    project.name === "Kue" || project.name === "SingHealth Retail Management Platform" ? (
-                                        <Card.Link href={project.code}>Click to see source code (and demo)</Card.Link>
-                                    ) : (
-                                        <div></div>
-                                    )
-                                }
-                                
-                            </Card>
-                            
-                            <br></br>
-                            <br></br>
-                            <br></br>
-
-                            <Divider> & </Divider>
-
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            
-                            </div>
-                        )
-                    )
+              <div
+                className={
+                  project.images.length > 1 ? styles.imageGrid : styles.imageSingle
                 }
-                    
-            </div>
-        )
-    }
+              >
+                {project.images.map((image, imageIndex) => (
+                  <div className={styles.imageFrame} key={`${project.name}-${imageIndex}`}>
+                    <img src={image} alt={`${project.name} preview ${imageIndex + 1}`} />
+                  </div>
+                ))}
+              </div>
+
+              <ul className={styles.pointerList}>
+                {project.pointers.map((pointer, pointerIndex) => (
+                  <li key={`${project.name}-pointer-${pointerIndex}`}>{pointer}</li>
+                ))}
+              </ul>
+
+              <div className={styles.cardFooter}>
+                <div className={styles.cardLine}></div>
+                {(project.name === "Kue" ||
+                  project.name === "SingHealth Retail Management Platform") && (
+                  <a
+                    className={styles.projectLink}
+                    href={project.code}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View source code
+                  </a>
+                )}
+                <Link
+                  className={styles.detailLink}
+                  to={`/projects/${project.id}`}
+                >
+                  See more details
+                </Link>
+              </div>
+            </article>
+          ))}
+        </section>
+      </main>
+    );
+  }
 }
 
-export default Projects
+export default Projects;

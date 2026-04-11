@@ -1,80 +1,186 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+.page {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
 
+.hero {
+  max-width: 780px;
+  padding: 10px 0 28px;
+}
 
-.exp {
-    height: 100vh;
-    width: 80vw;
-    display: flex;
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.76rem;
+  color: var(--accent-cool);
+}
+
+.hero h1,
+.sectionHeader h2 {
+  margin: 14px 0 0;
+  color: var(--heading);
+  font-family: "Fraunces", serif;
+  line-height: 1.05;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.intro {
+  margin: 18px 0 0;
+  max-width: 64ch;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.08rem;
+}
+
+.section {
+  margin-top: 26px;
+}
+
+.sectionHeader {
+  margin-bottom: 18px;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+}
+
+.timeline {
+  display: grid;
+  gap: 22px;
+}
+
+.timelineCard {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 18px;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(11, 25, 44, 0.82), rgba(8, 18, 34, 0.95));
+  box-shadow: var(--shadow);
+  transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.timelineCard:hover {
+  border-color: rgba(169, 184, 206, 0.3);
+  box-shadow: 0 28px 90px rgba(1, 8, 18, 0.55), 0 0 0 1px rgba(125, 211, 252, 0.06);
+}
+
+.timelineRail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timelineDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-top: 6px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-cool));
+  box-shadow: 0 0 0 6px rgba(255, 138, 61, 0.08);
+}
+
+.timelineLine {
+  position: absolute;
+  top: 28px;
+  bottom: -26px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(125, 211, 252, 0.5), transparent);
+}
+
+.cardContent {
+  min-width: 0;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  color: var(--heading);
+  font-size: 1.45rem;
+}
+
+.role,
+.meta {
+  margin: 10px 0 0;
+}
+
+.role {
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+
+.meta {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.pointerList {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.pointerList li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.pointerList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-cool));
+}
+
+@media (min-width: 1200px) {
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timelineLine {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 32px;
+  }
+
+  .timelineCard {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .timelineRail {
+    display: none;
+  }
+
+  .cardHeader {
     flex-direction: column;
-}
+  }
 
-.text_container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 5rem;
-}
-
-.text_container p{
-    position: relative;
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-.exp_container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 5rem;
-    width: 1010px;
-}
-
-.exp_container .pointer_wrapper {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 2rem;
-}
-
-.exp_container h1 {
-	font-size: 4rem;
-    font-family: 'Montserrat';
-}
-
-.exp_container h2 {
-	font-size: 2.5rem;
-}
-
-.exp_container p{
-    position: relative;
-    font-size: 1rem;
-    opacity: 0.4;
-}
-
-.exp_container ul{
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    font-size: 1rem;
-    float: left;
-    white-space: pre-line;
-}
-
-.exp_container li{
-    clear: both; 
-    float: left;
-    display: block; position: relative;
-}
-
-/* .exp_container li:after{
-    content: "\A";
-    white-space: pre;
-} */
-
-.exp_container meta {
-	width: 75vw;
-    font-size: 2rem;
-    position: relative;
-    top:-6rem;
-    opacity: 0.4;
+  .meta {
+    white-space: normal;
+  }
 }

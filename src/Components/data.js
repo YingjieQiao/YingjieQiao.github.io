@@ -2,7 +2,7 @@
 export default {
     fullname: "Yingjie Qiao",
     name: "Yingjie",
-    me_img: "me.png",
+    me_img: "/me.png",
     intro: "I'm a Software Engineer. Currently, I am working at ByteDance Singapore on Risk Control & Compliance solutions that support the payment services at ByteDance / TikTok. Previously, I worked on similar Risk Management solutions at Binance, and OCR softwares at SAP during my internships. " + 
             "I graduated with a Computer Science degree from Singapore " +
             "University of Technology and Design (SUTD) in Sept 2022.",
@@ -109,9 +109,10 @@ export default {
 
     projects: [
         {
+            "id": "singhealth",
             "name": "SingHealth Retail Management Platform",
             "images": [
-                "singhealth.png",
+                "/singhealth.png",
             ],
             "pointers": [
                 "A web platform to enable digitalization of SingHealth Retail Management. This is to help SingHealth manages the retail outlets under its hospitals digitally, including hygien non-conpliance, outlet evaluation, report and email automation, etc.",
@@ -121,11 +122,12 @@ export default {
             "code": "https://github.com/YingjieQiao/SingHealth_Retail_Management_ESC"
         }
         ,{
+            "id": "kue",
             "name": "Kue",
             "images": [
-                "kue1.png",
-                "kue2.png",
-                "kue3.png"
+                "/kue1.png",
+                "/kue2.png",
+                "/kue3.png"
             ],
             "pointers": [
                 "Kue is a Smart restaurant management and order tracking app, developed using Native Java. It provideds" + 
@@ -139,9 +141,10 @@ export default {
         },
 
         {
+            "id": "email-scheduler",
             "name": "Automated Email Scheduler",
             "images": [
-                "jublia.png",
+                "/jublia.png",
             ],
             "pointers": [
                 "This is one of the projects I've done during my internship at Jublia. An email scheduler is employed to send a series of emails for each event to engage the attendees from 1 week before the event until the end of the event. I designed a process such that all emails are automatically scheduled after the first “Launch Email” is sent.",

@@ -1,133 +1,121 @@
-import React, { Component } from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import React, { Component } from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import styles from "../css/home.module.css";
 import data from "./data";
 
 class Home extends Component {
+  render() {
+    return (
+      <main className={styles.page}>
+        <section className={styles.heroSection}>
+          <div className={styles.heroCopy}>
+            <p className={styles.eyebrow}>Based in Singapore</p>
+            <h1>
+              Building reliable software for high-trust, high-scale products.
+            </h1>
+            <p className={styles.heroIntro}>{data.intro}</p>
 
-    render() {
-        return (
-            <div className={styles.home}>
+            <div className={styles.heroHighlights}>
+              <div className={styles.highlightCard}>
+                <span className={styles.highlightLabel}>Current focus</span>
+                <strong>Risk control and compliance systems</strong>
+              </div>
+              <div className={styles.highlightCard}>
+                <span className={styles.highlightLabel}>Strengths</span>
+                <strong>Backend platforms, APIs, automation, cloud systems</strong>
+              </div>
+            </div>
+          </div>
 
-                <div className={styles.home_container}>
-                    <div className={styles.home_head_wrapper}>
-                        <h1> Hello there! <br></br> I'm <span>{data.name}</span></h1>
-
-                        <p>{data.intro}</p>
-                        
-                    </div>
-
-                    <div className={styles.image_container}>
-                        <img src={data.me_img} alt="Author"></img>
-                        <div className={styles.bg}></div>
-                    </div>
-
-                    
-                </div>
-
-                <div className={styles.about_container}>
-                    <p>{data.paragraph1}</p>
-                    
-                    <br></br>
-                    <br></br>
-
-                    <p> {data.techstack}</p>
-
-                    <h2>Programming Languages:</h2>
-
-                    <div>
-                        <ul>
-                            {data.languages.map(
-                                (language)=>(
-                                    <li key={language.name}>{language.name}</li>
-                                )
-                            )}
-                        </ul>
-                    </div>
-
-                    <h2>Web Frameworks:</h2>
-
-                    <div>
-                        <ul>
-                            {data.web_fw.map(
-                                (fw)=>(
-                                    <li key={fw.name}>{fw.name}</li>
-                                )
-                            )}
-                        </ul>
-                    </div>
-
-                    <h2>Tools and Technologies:</h2>
-                    
-                    <div>
-                        <ul class="columns" data-columns="2">
-                            {data.tools.map(
-                                (tool)=>(
-                                    <li key={tool.name}>{tool.name}</li>
-                                )
-                            )}
-                        </ul>
-                    </div>
-
-                    <h2>etc...</h2>
-                    
-
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                </div>
-
-                <div className={styles.contact_container}>
-                    
-                    
-
-                    <h1>Get in touch.</h1>
-
-                    <br></br>
-                    <br></br>
-
-                    <a className={styles.email_link} href={`mailto:${data.contact_email}`}>
-                    {data.contact_email}
-                    </a>
-
-                    <div className={styles.social_links}>
-                        <ul>
-                            <li>
-                                <a href={`mailto:${data.contact_email}`}>
-                                    <FaEnvelope></FaEnvelope>
-                                </a>
-                            </li>
-                            <li>
-                                <a href={data.contact_link[0].url}>
-                                    <FaLinkedin></FaLinkedin>
-                                </a>
-                            </li>
-                            <li>
-                                <a href={data.contact_link[1].url}>
-                                    <FaGithub></FaGithub>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <footer> © <span>{new Date().getFullYear()} </span>Yingjie Qiao</footer>
-
-                    
-                </div>
-
-
-                                    
-                
-
+          <div className={styles.heroVisual}>
+            <div className={styles.photoHalo}></div>
+            <div className={styles.photoCard}>
+              <img src={data.me_img} alt="Yingjie Qiao" />
             </div>
 
+          </div>
+        </section>
 
-            
-        )
-    }
+        <section className={styles.sectionCard}>
+          <div className={styles.sectionHeading}>
+            <p className={styles.sectionKicker}>About</p>
+            <h2>Thoughtful engineering with a product mindset</h2>
+          </div>
+          <p className={styles.sectionBody}>{data.paragraph1}</p>
+          <p className={styles.sectionBody}>{data.techstack}</p>
+        </section>
+
+        <section className={styles.skillsSection}>
+          <div className={styles.skillPanel}>
+            <p className={styles.sectionKicker}>Core stack</p>
+            <h3>Programming Languages</h3>
+            <ul className={styles.skillList}>
+              {data.languages.map((language) => (
+                <li key={language.name}>{language.name}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={styles.skillPanel}>
+            <p className={styles.sectionKicker}>Frameworks</p>
+            <h3>Web Frameworks</h3>
+            <ul className={styles.skillList}>
+              {data.web_fw.map((framework) => (
+                <li key={framework.name}>{framework.name}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={`${styles.skillPanel} ${styles.skillPanelWide}`}>
+            <p className={styles.sectionKicker}>Tooling</p>
+            <h3>Tools and Technologies</h3>
+            <ul className={styles.skillGrid}>
+              {data.tools.map((tool) => (
+                <li key={tool.name}>{tool.name}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className={styles.contactSection}>
+          <div>
+            <p className={styles.sectionKicker}>Contact</p>
+            <h2>Let&apos;s build something meaningful.</h2>
+            <a className={styles.emailLink} href={`mailto:${data.contact_email}`}>
+              {data.contact_email}
+            </a>
+          </div>
+
+          <div className={styles.socialLinks}>
+            <a href={`mailto:${data.contact_email}`} aria-label="Send email">
+              <FaEnvelope />
+            </a>
+            <a
+              href={data.contact_link[0].url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn profile"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href={data.contact_link[1].url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub profile"
+            >
+              <FaGithub />
+            </a>
+          </div>
+        </section>
+
+        <footer className={styles.footer}>
+          © {new Date().getFullYear()} Yingjie Qiao
+        </footer>
+      </main>
+    );
+  }
 }
 
-export default Home
+export default Home;

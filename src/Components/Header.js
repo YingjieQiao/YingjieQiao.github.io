@@ -1,25 +1,54 @@
 import { Component } from "react";
-import {Link} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 import styles from "../css/home.module.css";
 import data from "./data";
 
-
 class Header extends Component {
-
-    render() {
-        return (
-            <div className={styles.header_container}>
-                <Link to="/"><h1>{data.fullname}</h1></Link>
-                <nav>
-                    <ul>
-                        <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/experiences">Experiences</Link></li>
-                    </ul>
-                </nav>
+  render() {
+    return (
+      <header className={styles.siteHeader}>
+        <div className={styles.headerContainer}>
+          <NavLink exact to="/" className={styles.brandMark}>
+            <img
+              src={data.me_img}
+              alt={data.name}
+              className={styles.brandInitials}
+            />
+            <div className={styles.brandText}>
+              <strong>{data.fullname}</strong>
+              <span>Software Engineer</span>
             </div>
-        )
-    }
+          </NavLink>
+
+          <nav className={styles.nav}>
+            <NavLink
+              exact
+              to="/"
+              className={styles.navLink}
+              activeClassName={styles.navLinkActive}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className={styles.navLink}
+              activeClassName={styles.navLinkActive}
+            >
+              Projects
+            </NavLink>
+            <NavLink
+              to="/experiences"
+              className={styles.navLink}
+              activeClassName={styles.navLinkActive}
+            >
+              Experience
+            </NavLink>
+          </nav>
+        </div>
+      </header>
+    );
+  }
 }
 
-export default Header
+export default Header;
