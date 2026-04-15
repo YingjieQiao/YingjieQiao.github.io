@@ -30,13 +30,13 @@ class Header extends Component {
             >
               Home
             </NavLink>
-            {/* <NavLink
+            <NavLink
               to="/projects"
               className={styles.navLink}
               activeClassName={styles.navLinkActive}
             >
               Projects
-            </NavLink> */}
+            </NavLink>
             <NavLink
               to="/experiences"
               className={styles.navLink}

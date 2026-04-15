@@ -115,7 +115,8 @@ export default {
                 "Built with Flask, React, MongoDB and AWS Services.",
                 
             ],
-            "code": "https://github.com/YingjieQiao/SingHealth_Retail_Management_ESC"
+            "code": "https://github.com/YingjieQiao/SingHealth_Retail_Management_ESC",
+            "markdownFile": "/projects/singhealth.md"
         }
         ,{
             "id": "kue",
@@ -133,7 +134,8 @@ export default {
                 "Landing page provides another layer of interaction with the customers- opening up a new path for connectivity between food establishments and their customers, where customers will be given their waiting time and be notified when the order is done, as well as a rating system.",
                 "Data collection and analysis - We recognised that many data points are being collected during the usage of the application’s various functions, and that we could make use of these data to provide some analytics for the food establishments."
             ],
-            "code": "https://github.com/YingjieQiao/kue"
+            "code": "https://github.com/YingjieQiao/kue",
+            "markdownFile": "/projects/kue.md"
         },
 
         {
@@ -145,7 +147,8 @@ export default {
             "pointers": [
                 "This is one of the projects I've done during my internship at Jublia. An email scheduler is employed to send a series of emails for each event to engage the attendees from 1 week before the event until the end of the event. I designed a process such that all emails are automatically scheduled after the first “Launch Email” is sent.",
             ],
-            "code": "https://github.com/YingjieQiao/FPGA_Snake_Game_Using_16bit_CPU"
+            "code": "https://github.com/YingjieQiao/FPGA_Snake_Game_Using_16bit_CPU",
+            "markdownFile": "/projects/email-scheduler.md"
         }
         
     ]
