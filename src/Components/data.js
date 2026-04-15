@@ -15,13 +15,12 @@ export default {
 
     techstack: "I have experience in the following areas:",
 
-    languages: [{"name": "Python"}, {"name": "Java"}, {"name": "JavaScript"}, 
-                {"name": "Golang"}, {"name": "C"}],
-    web_fw: [{"name": "Flask"}, {"name": "FastAPI"}, {"name": "Spring"}, {"name": "Express.js"}, {"name": "React.js"}],
-    tools: [{"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, 
-            {"name":  "Google Cloud"}, 
-            {"name": "MongoDB"}, {"name": "PostgreSQL"}, {"name": "Jenkins"}, 
-            {"name": "Android"}, {"name": "Ubuntu"}, {"name": "Node.js"}, 
+    languages: [{"name": "Golang"}, {"name": "Python"}, {"name": "Java"}, 
+                {"name": "JavaScript"}, {"name": "C"}],
+    web_fw: [{"name": "Kitex"},  {"name": "Hertz"},  {"name": "Flask"}, {"name": "FastAPI"}, {"name": "Spring"}, {"name": "Express.js"}, {"name": "React.js"}],
+    tools: [{"name": "PostgreSQL"}, {"name": "MongoDB"}, {"name": "Docker"}, {"name": "Kubernetes"}, {"name": "AWS"}, 
+            {"name":  "Google Cloud"}, {"name": "Jenkins"}, 
+            {"name": "Android"}, {"name": "Linux CLI"}, {"name": "Node.js"}, 
             {"name": "Shell Script"}, {"name": "Git"}],
 
     contact_email: "yingjie_qiao@outlook.com",
@@ -38,11 +37,24 @@ export default {
 
     jobs: [
         {
+            "name": "ByteDance",
+            "title": "Software Engineer II @ Global Payment",
+            "location_and_time": "Singapore, Sep 2022 - current",
+            "pointers": [
+                "Delivered KYC solutions that supported TikTok PayLater (BNPL) rollout and subsequent loan business model iteration SEA (ID, PH, MY, TH, VN) and LATAM (MX, BR), onboarded >1.4M users and contributed to ~77.78M USD TPV annually. Working on other financial loan products such as merchant cash loan in SEA and LATAM too.",
+                "Designed and developed the first systematic disaster recovery solution in the team, reducing KYC vendor outage MTTR (mean time to recovery) down to < 15 minutes.",
+                "Fraudulent transaction detection based on Visa CyberSource and in-house decision engine.",
+                "Chargeback operations with 9 payment channels (PayPal, Stripe, Adyen, WorldPay, etc) handling transaction amount > 4M USD",
+                "Designed a data synchronization service using MySQL binlog and Elasticsearch for KYC case review platform, aggregating multiple upstream relational databases into a unified data model and eliminating expensive SQL joins by offloading queries to Elasticsearch. Supported 11K+ KYC cases/day and used by 100+ business operation colleagues across US, EU, and APAC."
+            ]
+        },
+        {
             "name": "Binance",
             "title": "Software Engineer Intern @ Risk",
             "location_and_time": "Singapore, Jan 2022 - Apr 2022",
             "pointers": [
-                "Working on Risk Management related backend development for Binance's transaction services using Java Spring framework.",
+                "Worked on Risk Management related backend development for Binance's transaction chargeback services using Java Spring framework.",
+                "Integrated and maintained external service providers such as Visa CyberSource, Ekata, etc."
             ]
         },
         {
@@ -53,19 +65,7 @@ export default {
                 "Scalability - Implemented Message Queue between API interface and GPU computing cluster to make sure the service does not break under high traffic.",
                 "Availability - Conducted various load test using locust and updated horizontal scaling policy.",
                 "Updated Kubernetes deployment script for new OCR models with Grafana and Prometheus for monitoring.",
-                "Updated to HTTPS connection using TLS certificates for the deployment of new OCR model to enhance security.",
-                "OCR result visualization tool using React and FastAPI."
-            ]
-        },
-        {
-            "name": "Singapore University of Technology and Design",
-            "title": "Research Assistant",
-            "location_and_time": "Singapore, Aug 2020 - Oct 2020",
-            "pointers": [
-                "Contributed a VQA (Video Question Answering) Deep Learning model baseline as a contrasting experiment to " +
-                "the paper “TrafficQA: A Question Answering Benchmark and an Efficient Network " +
-                "for Video Reasoning over Traffic Events” – accepted by CVPR 2021.",
-                "Managed the lab GPU server and deployed multiple Deep Learning experiments using Docker over time."                
+                "Updated to HTTPS connection using TLS certificates for the deployment of new OCR model to enhance security."
             ]
         },
         {
@@ -81,14 +81,10 @@ export default {
 
                 "Migrated static assets from host servers to AWS S3 for better management and security. " +
                 "Updated to AWS S3 API for related file-reading functions across all of Jublia’s codebases.", 
-
-                "Refactored and added new features to server auto-deployment scripts, " +
-                "consists of Python code and bash scripts.",
                 
-                "Developed a Python script that automates the deletion of previous quarters’ user data stored " +
-                "in the databases hosted on AWS and Google Cloud.",
+                "Built a Python-based data lifecycle automation tool to purge outdated user data across AWS and Google Cloud databases, improving storage efficiency and ensuring compliance with data retention policies.",
 
-                "Delivered 10+ bug fixes across the system, such as maintenance of RESTful APIs, " +
+                "Delivered 10+ bug fixes across the system, including maintenance of RESTful APIs, " +
                 "refactoring of legacy code, etc."
             ]
         }
@@ -98,9 +94,9 @@ export default {
         {
             "name": "Singapore University of Technology and Design",
             "title": "Bachelor of Engineering, Computer Science and Design, Honours",
-            "location_and_time": "Singapore, May 2019 - Present",
+            "location_and_time": "Singapore, May 2019 - Aug 2022",
             "pointers": [
-                "GPA: 4.51/5.00, Honours with Highest Distinction. ",
+                "GPA: 4.36/5.00, Honours with Distinction. ",
                 "Recipient of MOE Senior Middle 2 (SM2) scholarship. ",
                 "AY2019 - AY2020, AY2020 - AY2021 Honours List. Awarded to the top 10% of each student cohort in recognition of meritorious performance. "
             ]

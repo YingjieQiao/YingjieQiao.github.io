@@ -19,11 +19,11 @@ class Home extends Component {
             <div className={styles.heroHighlights}>
               <div className={styles.highlightCard}>
                 <span className={styles.highlightLabel}>Current focus</span>
-                <strong>Risk control and compliance systems</strong>
+                <strong>Risk control and compliance/KYC systems</strong>
               </div>
               <div className={styles.highlightCard}>
                 <span className={styles.highlightLabel}>Strengths</span>
-                <strong>Backend platforms, APIs, automation, cloud systems</strong>
+                <strong>Backend platforms, APIs, automation, infra toolings</strong>
               </div>
             </div>
           </div>
@@ -82,9 +82,6 @@ class Home extends Component {
           <div>
             <p className={styles.sectionKicker}>Contact</p>
             <h2>Let&apos;s build something meaningful.</h2>
-            <a className={styles.emailLink} href={`mailto:${data.contact_email}`}>
-              {data.contact_email}
-            </a>
           </div>
 
           <div className={styles.socialLinks}>

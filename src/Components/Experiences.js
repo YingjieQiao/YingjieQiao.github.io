@@ -45,10 +45,9 @@ class Experiences extends Component {
       <main className={styles.page}>
         <section className={styles.hero}>
           <p className={styles.kicker}>Experience</p>
-          <h1>Work spanning risk systems, OCR platforms, research, and product tooling.</h1>
+          <h1>Work spanning risk systems, OCR platforms, and product tooling.</h1>
           <p className={styles.intro}>
-            Roles across industry and academia, with a consistent focus on
-            scalable backend systems, automation, and developer-minded delivery.
+            From startups to crypto and big tech — consistently building scalable backend systems that ship with real impact.
           </p>
         </section>
 

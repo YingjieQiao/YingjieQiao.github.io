@@ -12,8 +12,7 @@ class Projects extends Component {
           <p className={styles.kicker}>Selected Work</p>
           <h1>Projects shaped around practical product problems.</h1>
           <p className={styles.intro}>
-            A mix of internal tools, digital platforms, and workflow-focused
-            applications built across web, mobile, and backend systems.
+            Business projects, technical architecture, and infra toolings.
           </p>
         </section>
 
